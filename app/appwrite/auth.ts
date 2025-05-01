@@ -84,7 +84,6 @@ export const logoutUser = async () => {
 export const getUser = async () => {
   try {
     const user = await account.get();
-    console.log("User:", user);
     if (!user) return redirect("/sign-in");
 
     const { documents } = await database.listDocuments(
