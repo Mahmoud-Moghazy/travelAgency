@@ -29,7 +29,7 @@ export const createProduct = async (
     after_completion: {
       type: "redirect",
       redirect: {
-        url: `${process.env.VITE_BASE_URL}/travel/${tripId}/success`,
+        url: `https://travel-agency-opal-one.vercel.app/travel/${tripId}/success`,
       },
     },
   });
